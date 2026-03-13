@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1 class="page-title">Latest Articles</h1>
+<div class="articles-container">
+{% for i in data %}
+        <div class="article-card">
+            <img src="{{i.image}}" alt="">
+            <div class="article-content">
+                <h2>{{i.Title}}</h2>
+                <p>{{i.Desc | truncatewords:20}}</p>
+                <a href="{% url 'read' i.id %}" class="read-btn">Read More</a>
+            </div>
+        </div>
+{% endfor %}
+</div>
+
+{% endblock %}
