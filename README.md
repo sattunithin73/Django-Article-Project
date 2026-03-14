@@ -67,4 +67,5 @@ Through this project I learned:
 
 ## Author
 Nithin S  
-Full Stack Python Learner – JSpiders
+Full Stack Python Developer
+
